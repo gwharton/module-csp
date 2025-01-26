@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp/etc/csp_whitelist.xsd">
+    <policies>
+        <policy id="img-src">
+            <values>
+                <value id="csp-blob-img" type="host">blob:</value>
+                <value id="csp-data-image" type="host">data:</value>
+            </values>
+        </policy>
+        <policy id="media-src">
+            <values>
+                <value id="csp-data-media" type="host">data:</value>
+            </values>
+        </policy>
+        <policy id="connect-src">
+            <values>
+                <value id="csp-googleapis-connect" type="host">maps.googleapis.com</value>
+                <value id="qz-connect" type="host">ws:</value>
+            </values>
+        </policy>
+    </policies>
+</csp_whitelist>
+
